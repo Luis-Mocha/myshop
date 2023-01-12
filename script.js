@@ -21,4 +21,16 @@ fetch("./items.json")
 import items from './items.json' assert {type:"json"};
 console.log(items);
 
+/*MODALE MENU*/
+const menuOptions = document.querySelector('.menu')
+const menuButton = document.querySelector('#menu-button')
+const menuCloseButton = document.querySelector('#close-button')
 
+//Apro il menu
+menuButton.addEventListener('click', function () {
+    menuOptions.classList.remove('menu-hidden')
+});
+
+menuCloseButton.addEventListener('click', function() {
+    menuOptions.classList.add('menu-hidden')
+})

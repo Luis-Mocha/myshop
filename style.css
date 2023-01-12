@@ -96,6 +96,7 @@ font-family: 'Cinzel Decorative', cursive;
     text-decoration: none;
     color: white;
     font-size: 20px;
+    font-weight: bold;
     line-height: 1;
 
     padding: 10px;
@@ -111,7 +112,7 @@ font-family: 'Cinzel Decorative', cursive;
 }
 
 /* --OPTIONS MODAL-- */
-.options {
+.menu {
     position: absolute;
     top: 70px;
     width: 100%;
@@ -119,30 +120,33 @@ font-family: 'Cinzel Decorative', cursive;
 
     border-radius: 0 0 20px 20px;
     border-bottom: 3px solid rgb(239, 122, 6);
-
-    
 }
 
-.options .buttons {
+.menu .buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    line-height: 2;
+    line-height: 3;
     
 }
 
-.options a {
+.menu a {
     color: white;
     text-decoration: none;
     margin: 0px 5px;
 }
 
-.options .close {
-    width: 15px;
+.menu #close-button {
+    width: 20px;
     height: 15px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 
     cursor: pointer;
+}
+
+/*aprire e chiudere le opzioni*/
+.menu-hidden {
+    display: none;
 }
