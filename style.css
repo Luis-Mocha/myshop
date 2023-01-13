@@ -127,7 +127,6 @@ font-family: 'Cinzel Decorative', cursive;
     flex-wrap: wrap;
     justify-content: space-evenly;
     line-height: 3;
-    
 }
 
 .menu a {
@@ -144,9 +143,56 @@ font-family: 'Cinzel Decorative', cursive;
     transform: translateX(-50%);
 
     cursor: pointer;
+
+    scale: 1;
+    transition: 1s;
+
 }
+
+#close-button:hover {
+    scale: 1.3;
+}
+
 
 /*aprire e chiudere le opzioni*/
 .menu-hidden {
     display: none;
+}
+
+
+/*SEZIONE FINALE*/
+#about-us {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+
+.description {
+    max-width: 50%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    text-align: center;
+
+    padding: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .description { 
+        font-size: 20px;
+        max-width: 80%;
+    }
+}
+
+.description > span {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.insta-reel {
+    padding: 10px;
 }

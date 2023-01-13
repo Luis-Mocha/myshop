@@ -34,3 +34,10 @@ menuButton.addEventListener('click', function () {
 menuCloseButton.addEventListener('click', function() {
     menuOptions.classList.add('menu-hidden')
 })
+
+/*
+$(menuThing).on('click', function(){
+     $(menuThing).toggle(false);
+     $(this).toggle(true);
+})
+*/
