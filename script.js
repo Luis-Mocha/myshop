@@ -1,27 +1,3 @@
-/*
-fetch('items.json').then(function (response) {
-    return response.json();
-
-}).then(function (json) {
-    items = json;
-    console.log('Dati: ', items.ring[1])
-}).catch(function (err) {
-    console.log('Fetch problem: ' + err.message);
-});
-*/
-
-/*
-fetch("./items.json")
-.then(response => {
-   return response.json();
-})
-.then(data => console.log(data));
-*/
-
-/*Configuro file json*/
-import items from './items.json' assert {type:"json"};
-console.log(items);
-
 /*MODALE MENU*/
 const menuOptions = document.querySelector('.menu')
 const menuButton = document.querySelector('#menu-button')
@@ -45,3 +21,30 @@ $(menuThing).on('click', function(){
      $(this).toggle(true);
 })
 */
+
+
+/* --ABOUT US-- */
+
+function openCity(aboutName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+    let i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+  
+    // Show the specific tab content
+    document.getElementById(aboutName).style.display = "block";
+  
+    // Add the specific color to the button used to open the tab content
+    elmnt.style.backgroundColor = color;
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
