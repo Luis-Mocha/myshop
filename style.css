@@ -280,6 +280,7 @@ opacity: 1;
     text-align: center;
 
     padding: 10px;
+    margin: auto 0;
 }
 
 @media screen and (max-width: 650px) {
@@ -290,9 +291,10 @@ opacity: 1;
 }
 
 .description > span {
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 .insta-reel {
     padding: 10px;
+    margin: auto 0;
 }
