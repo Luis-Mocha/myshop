@@ -261,11 +261,12 @@ opacity: 1;
 
 /* --ABOUT US-- */
 #about-us {
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 70px;
+
+    background-color: blanchedalmond;
 }
 
 .description {
