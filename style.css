@@ -228,7 +228,7 @@ border: none
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .tablink {
         font-size: 15px;
     }
@@ -366,6 +366,45 @@ border: none
 #signup-button {
     color: white;
     font-size: smaller;
+}
+
+
+/* --SOCIAL-- */
+#social-section {
+    padding-top: 70px;
+    text-align: center;
+    padding-bottom: 50px;
+    background: linear-gradient(194deg, rgba(128,127,147,1) 28%, rgba(204,129,68,1) 100%);
+}
+.social {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+
+#social-section h1 {
+    margin-bottom: 60px;
+    color: white;
+    font-weight: bold;
+}
+.social a {
+    margin: 0 10px;
+    width: 128px
+}
+
+.social a:hover {
+    animation-name: pop;
+    animation-duration: 0.8s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+@keyframes pop {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
 }
 
 
