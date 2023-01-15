@@ -26,25 +26,26 @@ $(menuThing).on('click', function(){
 /* --ABOUT US-- */
 
 function openAbout(aboutName, elmnt, color) {
-    // Hide all elements with class="tabcontent" by default */
+    // Default. nascondo tutti gli elementi tabcontent
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
   
-    // Remove the background color of all tablinks/buttons
+    // elimino il colore background dei tablink
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].style.backgroundColor = "";
     }
   
-    // Show the specific tab content
+    // Mostro il tabcontent specifico
     document.getElementById(aboutName).style.display = "block";
   
-    // Add the specific color to the button used to open the tab content
+    // Aggoungo un colore specifico al tablink selezionato
     elmnt.style.backgroundColor = color;
-  }
+}
   
-  // Get the element with id="defaultOpen" and click on it
+  // Rendo il tabcontent che voglio aperto di default
   document.getElementById("defaultOpen").click();
+
