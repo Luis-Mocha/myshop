@@ -1,6 +1,7 @@
 /*
 font-family: 'Cinzel', serif;
 font-family: 'Cinzel Decorative', cursive;
+color: rgb(245, 99, 17);
 */
 
 
@@ -69,6 +70,16 @@ border: none
     width: 40px;
     cursor: pointer;
 }
+#welcome-user {
+    margin: 10px;
+    font-size: 22px;
+}
+@media screen and (max-width: 899px) {
+    #welcome-user { 
+        display: none;
+    }
+}
+
 @media screen and (max-width: 550px) {
     .right img { 
         margin-right: 8px;
@@ -293,6 +304,69 @@ border: none
 }
 
 
+/*  --LOGIN-- */
+#login-modal {
+    width: 60%;
+    margin: auto;
+
+    background-color: rgb(44, 38, 38);
+    color: white;
+    padding: 10px;
+    border: 6px ridge;
+    border-color: rgb(245, 99, 17) white;
+    border-radius: 0 20px 0 20px;
+
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+@media screen and (max-width: 500px) {
+    #login-modal {
+       width: 90%;
+    }
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-form img {
+    width: 30%;
+    border-radius: 15%; 
+}
+#login-form button {
+    color: white;
+    cursor: pointer;
+}
+#login-form > * {
+    margin: 5px 0;
+    font-size: larger;
+}
+
+#login-form label:last-child {
+    font-size: 12px;
+    font-style: italic;
+    color: gray;
+}
+
+.login-show {
+    display: none;
+}
+
+#login-form input {
+    padding: 3px;
+    border-bottom: 1px solid orange;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#signup-button {
+    color: white;
+    font-size: smaller;
+}
 
 
 

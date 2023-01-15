@@ -22,10 +22,11 @@
         </div>
 
         <div class="center">BEADY IDEAS</div>
-        
+
         <div class="right">
-            <button><img src="./images/shoppingcart-icon-white.png" alt="Icona Carrello"></button>
-            <button><img src="./images/user-icon-white.png" alt="Icona User"></button>
+            <span id="welcome-user"></span>
+            <button><img src="./images/shoppingcart-icon-white.png" alt="Icona Carrello" title="Carrello"></button>
+            <button><img id="login-icon" src="./images/user-icon-white.png" alt="Icona User" title="Login"></button>
             
             
         </div>
@@ -43,11 +44,33 @@
 
        
     </div>
+
+<!--LOGIN WINDOW-->
+<div id="login-modal"class="login-show">
+    <form id="login-form">
+        <img src="./images/logo-transparent.png" alt="icona User">
+
+        <label for="login-name">Nome:</label>
+        <input type="text" name="login-name" id="login-name" placeholder="" required>
+
+        <label for="login-password">Password:</label>
+        <input type="password" name="login-password" id="login-password" required>
+
+        <div>
+            <input type="checkbox" name="login-passwordcheck" id="login-passwordcheck" checked>
+            <label for="login-passwordcheck">Rimani connesso</label>
+        </div>
+        
+        <button type="submit">LOGIN</button>
+    </form>
+    <a href="https://www.youtube.com/watch?v=4Cio-CSt_rg" target="_blank" id="signup-button">Registrati</a>
+</div>
+
 <!--HERO-->
     <div class="hero">
         <div class="opacity">
             <div class="buttons">
-                <a href="#">PRODOTTI</a>
+                <a href="https://www.youtube.com/watch?v=4Cio-CSt_rg" target="_blank">PRODOTTI</a>
                 <a href="#gallery-section">GALLERIA</a>
                 <a href="#aboutsection">ABOUT US</a>
             </div>
@@ -55,66 +78,86 @@
     </div>
 
 <!--lorem ipsum-->
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis voluptatibus dolorem, eveniet atque sit odio cupiditate delectus. Dolores, perferendis laboriosam? Amet placeat fugit a iure magnam nisi, doloribus consectetur suscipit.
-    Fugiat consectetur eveniet blanditiis assumenda, hic sed dolor alias nihil odio quasi fuga provident minus accusantium. Dolore id recusandae labore dolorem odit eligendi distinctio consequatur, hic natus alias amet quas!
-    Odit exercitationem quam quis distinctio excepturi vero est perferendis consequatur corrupti rem eum, soluta, at ipsam ut? Atque vero exercitationem tempore maxime voluptates aspernatur vitae, alias at magnam necessitatibus facere.
-    Quia incidunt nemo, eos similique perferendis, error reprehenderit consectetur quisquam rerum neque nobis ea doloremque quo placeat accusantium? Quia nesciunt hic repellat tempore blanditiis commodi, tempora inventore et culpa iure!
-    Aliquam nulla, architecto molestiae quas nisi quasi, ratione laborum fugit doloremque rerum dignissimos, excepturi incidunt dolor voluptas iusto repellat corporis. Dolore esse voluptatum rem corporis modi laudantium rerum consequatur possimus!
-    Quae eum rerum temporibus beatae at quis consequuntur magni architecto, repellat a. Perspiciatis cumque ducimus dignissimos veritatis error itaque excepturi, minus veniam! Doloremque, saepe quasi accusantium velit repellendus non voluptas?
-    Ipsa vero assumenda quis esse harum ratione exercitationem eius suscipit nihil voluptatem dicta voluptas modi quae, voluptates temporibus sequi quidem in placeat aliquam, illum totam commodi aspernatur natus! Accusamus, quod.
-    Sint velit corporis laudantium vero, doloremque nam quibusdam sapiente voluptates quisquam quidem id sunt. Voluptatibus, obcaecati. Quibusdam inventore blanditiis, fuga eius ducimus neque, nisi veniam ad dolor consequatur exercitationem libero!
-    Dolorem, accusamus quam? Culpa facere id odit iste dolorum magnam vel maiores eius doloribus dolores tenetur blanditiis inventore nulla, repellendus quidem nam sint explicabo, aut harum fugiat! Doloribus, laborum alias.
-    Tempora, distinctio? Odio voluptatum, nulla, perferendis ipsum quod adipisci et beatae doloremque esse ratione itaque ipsam necessitatibus, molestias inventore enim natus quasi dolorem asperiores expedita libero obcaecati eveniet temporibus! Ea!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum eum, optio vel in exercitationem, unde nesciunt delectus ipsa dolorem quo est temporibus error eos repellat praesentium alias aspernatur, explicabo maiores!
+    Reprehenderit tempore numquam, doloribus, excepturi nobis amet cumque corporis facilis eaque aut quasi! Cupiditate aspernatur vero, saepe et suscipit adipisci ipsum nulla tempora dolores voluptas autem, quo doloribus. Tempore, voluptate.
+    Sequi nulla dicta alias! Facere beatae eos praesentium repellat, saepe maiores recusandae minus iusto corrupti ullam perferendis eveniet magnam quo ipsam vero aperiam quibusdam consequuntur aut ratione similique voluptatum et!
+    Fugiat cumque blanditiis corrupti recusandae rem reprehenderit, nostrum perferendis expedita. Necessitatibus molestias, aspernatur sint numquam quasi, molestiae perspiciatis optio nam pariatur, eaque ipsa nostrum nisi fugiat dolorum officia impedit eveniet.
+    Neque vel dolorem aliquid iste id quibusdam similique repellendus quidem, sequi beatae commodi tempore velit doloribus possimus harum asperiores sapiente veritatis nostrum placeat quod. Sed saepe neque et vitae libero?
+    Veniam tenetur perspiciatis atque? Temporibus odio in nihil sed nesciunt fugiat repudiandae aliquam, maxime qui beatae ipsam adipisci, omnis libero. In reiciendis corrupti vel neque error iste, autem cumque amet.
+    Fugit, placeat inventore illum iusto laudantium ipsa, aspernatur provident quasi odio facere iste iure, itaque maiores. Dolor adipisci at aut accusamus magni. Esse ducimus molestiae corrupti ipsum maxime! Nihil, cupiditate!
+    Magnam maxime aperiam, dolorem eos ducimus eum ad eligendi, consectetur modi harum ullam quia quas quos explicabo dolores cumque, nesciunt quod? Nesciunt impedit libero sint explicabo ducimus similique fuga quo.
+    Sed similique aliquid est ratione consequatur adipisci voluptatum veritatis, commodi architecto aut quasi voluptatem repudiandae beatae iste sint, unde, expedita consequuntur porro quos culpa. Accusantium id tenetur magnam inventore beatae.
+    Iusto placeat deserunt, voluptatum quibusdam excepturi possimus, magni, vel voluptatibus nobis rem nemo modi non! Quae, amet dignissimos harum fugit molestias sequi exercitationem officia tenetur! Doloremque ullam eligendi corrupti itaque.
+    Quibusdam quis quo fugiat accusantium doloremque consectetur, perspiciatis suscipit molestiae alias ratione veniam quia in doloribus officia minus facere nesciunt temporibus deleniti vel fugit nulla nihil enim maxime. Dolore, laudantium!
+    A possimus, blanditiis minima ullam similique nihil, dolores perferendis eaque dicta tenetur voluptatem quaerat veniam et pariatur adipisci facilis commodi laboriosam quod nisi, fugiat fuga sequi? Optio in consequuntur doloremque.
+    Quasi, quod autem. Perferendis dolores reiciendis tempora eos quae quam temporibus laudantium error placeat enim soluta exercitationem praesentium id, voluptatem ullam quod. Quaerat ipsa enim distinctio sequi, veniam doloremque obcaecati.
+    Cum quaerat commodi, error enim, magni sunt animi, libero labore fugit quibusdam dolor vel laudantium distinctio molestias! Officiis, blanditiis ut! Suscipit eveniet earum libero accusantium, minima natus deserunt minus dolores!
+    Laudantium nam quo sequi ipsa debitis perspiciatis vel, quam ad perferendis consequuntur qui voluptates odit hic modi in, ex sapiente. Laudantium qui optio quos animi expedita sapiente voluptate a quis.
+    Dolores ut numquam consequatur obcaecati alias expedita praesentium facilis natus at eius minima neque nesciunt nisi autem deserunt assumenda tempore, ea quod tenetur sapiente. Minus cupiditate ducimus sed accusamus vitae.
+    Aspernatur eos ullam, veniam error recusandae corrupti laborum. Accusantium modi voluptatum ea, nostrum sapiente perferendis. Animi perspiciatis mollitia voluptas est nihil? Reprehenderit sed iure ex, optio veniam placeat expedita amet!
+    Animi soluta mollitia itaque quod ut optio harum autem cum ex, in beatae rem vitae sed obcaecati nobis hic! Quisquam odit accusamus animi delectus. Delectus dignissimos consequuntur cupiditate nostrum! Quisquam.
+    Eveniet quibusdam aperiam exercitationem illo, animi, nostrum blanditiis unde dicta, rem ducimus numquam molestias est vel perferendis? Molestiae doloribus, earum sequi, cum beatae temporibus laudantium repudiandae architecto, fugiat ex dolorem!
+    Magnam nihil voluptates hic quo quasi! Alias repudiandae, non, nulla tempore fugit dolor voluptas porro eius hic qui illo itaque fuga nemo harum quidem accusamus at saepe quam corporis officiis?
+    Modi ipsa autem veritatis unde laboriosam debitis assumenda, ipsam at dolor labore quia tenetur voluptatibus eos non nihil eaque adipisci repellat voluptatem alias. Error sint porro rerum aliquam, ad cupiditate.
+    Architecto quasi aliquid error dolorum suscipit, nulla eaque asperiores sint vero, inventore natus, qui explicabo doloribus veniam est veritatis optio eos maxime possimus officia aperiam illum quae. Earum, tenetur corrupti.
+    Sunt excepturi unde nisi quidem suscipit quis libero esse beatae est necessitatibus. Pariatur veritatis minus corrupti vitae! Ipsum autem ab, fuga excepturi nobis provident dignissimos, ex neque, quos natus sed.
+    Rerum tenetur culpa aliquam consectetur minus cum, dolorum consequuntur aspernatur, odit veritatis dolorem, sit quae saepe nobis amet reiciendis quidem sapiente. Dicta adipisci libero quaerat expedita, quod exercitationem tenetur omnis.
+    Aspernatur eaque eligendi neque, autem maiores quasi esse laudantium rem eveniet cupiditate mollitia illum error non incidunt sequi dolor. Consectetur maxime quidem molestiae, iure illum nemo voluptas. At, et doloremque.
+    Placeat, qui? Porro autem iste ad quaerat placeat vitae voluptatibus quas, labore id commodi, aliquam, nihil quis iusto tenetur recusandae ea beatae possimus. Nemo eveniet voluptas reprehenderit aspernatur necessitatibus neque?
+    Amet vel beatae qui corrupti, a nihil perspiciatis laboriosam consequuntur veniam ipsa impedit inventore nesciunt voluptates, unde illum blanditiis sit nemo, saepe doloribus libero quia consequatur? Quisquam enim a harum.
+    Ut aliquam quo at officiis officia enim. Soluta voluptate, hic voluptatem quas facere libero totam saepe? Et, nihil itaque quidem hic molestias illum quibusdam unde ratione, eos sapiente voluptate laborum.
+    Necessitatibus illo minima maxime inventore, omnis nisi nulla dolorem quo libero debitis facilis, qui at mollitia dolor odio earum ipsa! Placeat harum obcaecati dolore asperiores, mollitia pariatur neque sapiente similique.
+    Culpa tempora minus nisi possimus unde. Maiores, ratione. Numquam cumque est aliquam commodi ab voluptatem doloremque consequuntur minima nemo quam fugit molestiae perferendis saepe, maxime, corporis autem quod quas excepturi?</p>
 
 
 <!--ABOUT US-->
-<div id="aboutsection">
-    <button class="tablink" onclick="openAbout('vittoria', this, 'rgb(245, 99, 17)')">Vittoria</button>
-    <button class="tablink" onclick="openAbout('about-us', this, 'rgb(245, 99, 17)')"  id="defaultOpen">ABOUT US</button>
-    <button class="tablink" onclick="openAbout('benedetta', this, 'rgb(245, 99, 17)')">Benedetta</button>
-    
-    <div id="vittoria" class="tabcontent">
-        <hr>
-        <p>Sono Vittoria, una ragazza creativa e appassionata di gioielleria. Ho sempre amato lavorare con le mie mani e creare cose uniche. La mia passione per i gioielli è iniziata fin da piccola, quando trascorrevo il tempo libero disegnando anelli e collane immaginari. Ora, insieme alla mia cugina Benedetta, metto il mio talento al servizio della creazione di anelli unici e personalizzati. Mi dedico con cura a ogni dettaglio e amo sperimentare con nuovi materiali e tecniche per creare pezzi unici.</p>
-        <div class="picture"><img src="./images/foto-vitto.jpg" alt="Foto Vitto"></div>
-    </div>
-    
-    <div id="about-us" class="tabcontent">
-        <span>🧡 Handmade jewellery</span>
-        <hr>
-        <p>Benvenuti nel nostro sito, dove potrete trovare anelli unici e artigianali creati con cura e passione da <strong>Vittoria</strong> e <strong>Benedetta</strong>, due cugine appassionate di gioielleria.
-            <br>Ogni anello è realizzato a mano con materiali di alta qualità, per garantirvi un pezzo unico e duraturo. Siamo orgogliose di offrirvi una vasta selezione di stili e di disegni che sicuramente incontreranno i vostri gusti. Siamo sempre a disposizione per aiutarvi nella scelta del vostro anello perfetto o per realizzare un pezzo su misura per voi.
-        </p>
-        <hr>
-        <p>📍 Based in Milano</p>
-    </div>
+    <div id="aboutsection">
+        <button class="tablink" onclick="openAbout('vittoria', this, 'rgb(245, 99, 17)')">Vittoria</button>
+        <button class="tablink" onclick="openAbout('about-us', this, 'rgb(245, 99, 17)')"  id="defaultOpen">ABOUT US</button>
+        <button class="tablink" onclick="openAbout('benedetta', this, 'rgb(245, 99, 17)')">Benedetta</button>
+        
+        <div id="vittoria" class="tabcontent">
+            <hr>
+            <p>Sono Vittoria, una ragazza creativa e appassionata di gioielleria. Ho sempre amato lavorare con le mie mani e creare cose uniche. La mia passione per i gioielli è iniziata fin da piccola, quando trascorrevo il tempo libero disegnando anelli e collane immaginari. Ora, insieme alla mia cugina Benedetta, metto il mio talento al servizio della creazione di anelli unici e personalizzati. Mi dedico con cura a ogni dettaglio e amo sperimentare con nuovi materiali e tecniche per creare pezzi unici.</p>
+            <div class="picture"><img src="./images/foto-vitto.jpg" alt="Foto Vitto"></div>
+        </div>
+        
+        <div id="about-us" class="tabcontent">
+            <span>🧡 Handmade jewellery</span>
+            <hr>
+            <p>Benvenuti nel nostro sito, dove potrete trovare anelli unici e artigianali creati con cura e passione da <strong>Vittoria</strong> e <strong>Benedetta</strong>, due cugine appassionate di gioielleria.
+                <br>Ogni anello è realizzato a mano con materiali di alta qualità, per garantirvi un pezzo unico e duraturo. Siamo orgogliose di offrirvi una vasta selezione di stili e di disegni che sicuramente incontreranno i vostri gusti. Siamo sempre a disposizione per aiutarvi nella scelta del vostro anello perfetto o per realizzare un pezzo su misura per voi.
+            </p>
+            <hr>
+            <p>📍 Based in Milano</p>
+        </div>
 
-      
-    <div id="benedetta" class="tabcontent">
-        <hr>
-        <p>Sono Benedetta, una ragazza dalla mente pratica e dalle mani d'oro. Ho sempre amato creare cose con le mie mani e ho deciso di trasformare questa passione in un lavoro. Insieme alla mia cugina Vittoria, creiamo anelli unici e artigianali che catturano l'attenzione dei clienti. Mi dedico con cura a ogni dettaglio e amo creare pezzi che siano allo stesso tempo belli e funzionali. La mia attenzione per i dettagli e la mia creatività rendono ogni anello un pezzo unico e speciale.</p>
-        <div class="picture"><img src="./images/foto-benni.jpg" alt="Foto Benni"></div>
-    </div>
+        
+        <div id="benedetta" class="tabcontent">
+            <hr>
+            <p>Sono Benedetta, una ragazza dalla mente pratica e dalle mani d'oro. Ho sempre amato creare cose con le mie mani e ho deciso di trasformare questa passione in un lavoro. Insieme alla mia cugina Vittoria, creiamo anelli unici e artigianali che catturano l'attenzione dei clienti. Mi dedico con cura a ogni dettaglio e amo creare pezzi che siano allo stesso tempo belli e funzionali. La mia attenzione per i dettagli e la mia creatività rendono ogni anello un pezzo unico e speciale.</p>
+            <div class="picture"><img src="./images/foto-benni.jpg" alt="Foto Benni"></div>
+        </div>
 
-</div>
+    </div>
 
 <!--GALLERY-->
-<div id="gallery-section">
-    <h1>< Gallery ></h1>
-    <div id="gallery">
-        <img src="./images/anello1.jpg" alt="Image 1">
-        <img src="./images/anello2.jpg" alt="Image 2">
-        <img src="./images/anello3.jpg" alt="Image 3">
-        <img src="./images/anello4.jpg" alt="Image 4">
-        <img src="./images/anello1.jpg" alt="Image 5">
-        <img src="./images/anello2.jpg" alt="Image 6">
-        <img src="./images/anello3.jpg" alt="Image 7">
-        <img src="./images/anello4.jpg" alt="Image 8">
+    <div id="gallery-section">
+        <h1>< Gallery ></h1>
+        <div id="gallery">
+            <img src="./images/anello1.jpg" alt="Image 1">
+            <img src="./images/anello2.jpg" alt="Image 2">
+            <img src="./images/anello3.jpg" alt="Image 3">
+            <img src="./images/anello4.jpg" alt="Image 4">
+            <img src="./images/anello1.jpg" alt="Image 5">
+            <img src="./images/anello2.jpg" alt="Image 6">
+            <img src="./images/anello3.jpg" alt="Image 7">
+            <img src="./images/anello4.jpg" alt="Image 8">
+        </div>
     </div>
-</div>
 
 <!--lorem ipsum-->
-<div>
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ab magnam at totam laborum odit consectetur est iste? Rem quis esse architecto totam delectus impedit in unde, est non quasi?
     Id corporis amet, dolorum officia repellendus accusantium. Similique error molestiae, laborum impedit, optio autem, quaerat non quas ducimus enim voluptatum fugiat esse! Soluta aperiam sunt animi pariatur quidem mollitia rem.
     Placeat sequi ullam omnis modi suscipit eveniet aperiam in praesentium hic eaque dicta incidunt, obcaecati, saepe inventore, asperiores quibusdam ducimus pariatur similique reprehenderit fuga quos laborum adipisci voluptate. Provident, consequatur!
@@ -135,7 +178,10 @@
     Ipsum, earum, qui, itaque aliquam ab natus sint debitis cupiditate similique quisquam ea? Blanditiis minus officiis sunt! Iusto exercitationem ea sit distinctio. Expedita, blanditiis neque. Totam porro reiciendis similique mollitia?
     Maxime harum quod aut atque similique nobis consequuntur deserunt, enim reprehenderit. Commodi voluptatum incidunt porro eligendi id repellat accusamus odit ipsum quos eos labore, sequi repellendus quae voluptas itaque nobis.
     Voluptates, rem. Eius quos accusamus sit ab omnis minus iure consequuntur, aperiam nostrum! Non eius, quis eligendi voluptate, excepturi dolores nemo, nobis sunt perferendis nihil culpa assumenda. Voluptate, vel animi.</p>
-</div>
+
+
+
+
 
 
 
