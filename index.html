@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OnlineShop</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,10 +33,10 @@
         <!--MENU MODAL-->
         <div class="menu">
             <div class="buttons menu-buttons">
-                <a href="#">ANELLI</a>
-                <a href="#">BRACCIALI</a>
-                <a href="#">GALLERIA</a>
-                <a href="#about-us">ABOUT US</a>
+                <a href="#" onclick="closeMenu()">ANELLI</a>
+                <a href="#" onclick="closeMenu()">BRACCIALI</a>
+                <a href="#" onclick="closeMenu()">GALLERIA</a>
+                <a href="#aboutsection" onclick="closeMenu()">ABOUT US</a>
             </div>
             <img id="close-button" src="./images/arrow-up.png" alt="Chiudi Menu">
         </div>
@@ -48,7 +49,7 @@
             <div class="buttons">
                 <a href="#">PRODOTTI</a>
                 <a href="#">GALLERIA</a>
-                <a href="#about-us">ABOUT US</a>
+                <a href="#aboutsection">ABOUT US</a>
             </div>
         </div>
     </div>
@@ -68,25 +69,30 @@
 
 
 <!--ABOUT US-->
-<div id="about-us">
-    <button class="tablink" onclick="openCity('London', this, 'rgb(245, 100, 17)')"> <em>Vittoria</em> </button>
-    <button class="tablink" onclick="openCity('Paris', this, 'rgb(245, 99, 17)')"  id="defaultOpen">ABOUT US</button>
-    <button class="tablink" onclick="openCity('Tokyo', this, 'rgb(245, 99, 17)')"><em>Benedetta</em></button>
+<div id="aboutsection">
+    <button class="tablink" onclick="openAbout('vittoria', this, 'rgb(245, 100, 17)')">Vittoria</button>
+    <button class="tablink" onclick="openAbout('about-us', this, 'rgb(245, 99, 17)')"  id="defaultOpen">ABOUT US</button>
+    <button class="tablink" onclick="openAbout('benedetta', this, 'rgb(245, 99, 17)')">Benedetta</button>
     
-    <div id="London" class="tabcontent">
+    <div id="vittoria" class="tabcontent">
         <p>Sono Vittoria, una ragazza creativa e appassionata di gioielleria. Ho sempre amato lavorare con le mie mani e creare cose uniche. La mia passione per i gioielli è iniziata fin da piccola, quando trascorrevo il tempo libero disegnando anelli e collane immaginari. Ora, insieme alla mia cugina Benedetta, metto il mio talento al servizio della creazione di anelli unici e personalizzati. Mi dedico con cura a ogni dettaglio e amo sperimentare con nuovi materiali e tecniche per creare pezzi unici.</p>
+        <div class="picture"></div>
     </div>
     
-    <div id="Paris" class="tabcontent">
+    <div id="about-us" class="tabcontent">
         <span>🧡 Handmade jewellery</span>
+        <hr>
         <p>Benvenuti nel nostro sito, dove potrete trovare anelli unici e artigianali creati con cura e passione da <strong>Vittoria</strong> e <strong>Benedetta</strong>, due cugine appassionate di gioielleria.
-            <br>Ogni anello è realizzato a mano con materiali di alta qualità, per garantirvi un pezzo unico e duraturo. Siamo orgogliose di offrirvi una vasta selezione di stili e di disegni che sicuramente incontreranno i vostri gusti. Siamo sempre a disposizione per aiutarvi nella scelta del vostro anello perfetto o per realizzare un pezzo su misura per voi.</p>
+            <br>Ogni anello è realizzato a mano con materiali di alta qualità, per garantirvi un pezzo unico e duraturo. Siamo orgogliose di offrirvi una vasta selezione di stili e di disegni che sicuramente incontreranno i vostri gusti. Siamo sempre a disposizione per aiutarvi nella scelta del vostro anello perfetto o per realizzare un pezzo su misura per voi.
+        </p>
+        <hr>
         <p>📍 Based in Milano</p>
     </div>
 
       
-    <div id="Tokyo" class="tabcontent">
+    <div id="benedetta" class="tabcontent">
         <p>Sono Benedetta, una ragazza dalla mente pratica e dalle mani d'oro. Ho sempre amato creare cose con le mie mani e ho deciso di trasformare questa passione in un lavoro. Insieme alla mia cugina Vittoria, creiamo anelli unici e artigianali che catturano l'attenzione dei clienti. Mi dedico con cura a ogni dettaglio e amo creare pezzi che siano allo stesso tempo belli e funzionali. La mia attenzione per i dettagli e la mia creatività rendono ogni anello un pezzo unico e speciale.</p>
+        <div class="picture"></div>
     </div>
 
 </div>
@@ -103,6 +109,15 @@
 
     <hr>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam optio veniam debitis dignissimos rem, odio maxime unde deserunt vitae nisi quaerat expedita asperiores blanditiis ullam eum quae dolor, qui reiciendis!</p>
+    <hr>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita facilis nesciunt, quidem in beatae distinctio illo quasi nemo perspiciatis tempora, sed omnis commodi at voluptas, officiis asperiores et tempore hic?
+    Nam quasi repellat doloribus corrupti dolore cum unde, magnam, veniam architecto sit at, voluptate porro excepturi ea quam reiciendis molestiae fuga atque explicabo voluptates officia provident. Delectus ipsam quia ratione.
+    Amet, porro officiis! Est placeat optio qui porro error facere, illo tenetur praesentium non iste laboriosam laudantium, minus nulla accusantium ipsam quibusdam excepturi. Quae, quaerat. Veritatis eos necessitatibus placeat est.
+    Corrupti ex nisi recusandae sint non fugit fugiat cumque voluptas delectus id nesciunt dolor, quis itaque, possimus, ullam ratione repudiandae. Nisi totam, vero ipsum earum minima dolor hic facilis soluta.
+    Repudiandae distinctio nihil illum odit possimus sequi, quibusdam natus magni voluptatem obcaecati debitis quaerat impedit? Eveniet omnis consequatur consectetur quasi quos molestias nulla architecto minus, veritatis, fugit, non aliquam eligendi?
+    Ipsum, earum, qui, itaque aliquam ab natus sint debitis cupiditate similique quisquam ea? Blanditiis minus officiis sunt! Iusto exercitationem ea sit distinctio. Expedita, blanditiis neque. Totam porro reiciendis similique mollitia?
+    Maxime harum quod aut atque similique nobis consequuntur deserunt, enim reprehenderit. Commodi voluptatum incidunt porro eligendi id repellat accusamus odit ipsum quos eos labore, sequi repellendus quae voluptas itaque nobis.
+    Voluptates, rem. Eius quos accusamus sit ab omnis minus iure consequuntur, aperiam nostrum! Non eius, quis eligendi voluptate, excepturi dolores nemo, nobis sunt perferendis nihil culpa assumenda. Voluptate, vel animi.</p>
 
 
 

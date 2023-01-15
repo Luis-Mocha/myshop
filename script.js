@@ -9,7 +9,7 @@ menuButton.addEventListener('click', function () {
 });
 
 //Chiudo il menu
-menuCloseButton.addEventListener('click', closeMenu)
+menuCloseButton.addEventListener('click', closeMenu);
 //Funzione per chiudere il menu
 function closeMenu() {
     menuOptions.classList.remove('menu-show')
@@ -25,7 +25,7 @@ $(menuThing).on('click', function(){
 
 /* --ABOUT US-- */
 
-function openCity(aboutName, elmnt, color) {
+function openAbout(aboutName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
