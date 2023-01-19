@@ -14,6 +14,10 @@ color: rgb(245, 99, 17);
     font-family: 'Cinzel', serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     width: 100%;
 }
@@ -292,7 +296,7 @@ border: none
     }
 }
 
-/*SCROLLBAR*/
+/*scrollbar*/
 #gallery::-webkit-scrollbar {
     width: 5px;
     height: 10px;
@@ -366,6 +370,13 @@ border: none
 #signup-button {
     color: white;
     font-size: smaller;
+}
+
+#login-xbutton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 8px;
 }
 
 

@@ -20,8 +20,12 @@ function closeMenu() {
 //aprire e chiudere la finestra di login cliccando sull'icona
 const loginIcon = document.querySelector('#login-icon');
 const loginModal = document.querySelector('#login-modal')
+const loginXBUtton = document.querySelector('#login-xbutton')
 
 loginIcon.addEventListener('click', function () {
+  loginModal.classList.toggle('login-show')
+});
+loginXBUtton.addEventListener('click', function () {
   loginModal.classList.toggle('login-show')
 });
 
