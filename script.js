@@ -80,7 +80,7 @@ function openAbout(aboutName, elmnt, color) {
 document.getElementById("defaultOpen").click();
 
 
-/* --PRDDOTTI */
+/* --PRODOTTI */
 fetch("./items.json")
 .then(response => {
     return response.json();
