@@ -262,6 +262,7 @@ border: none
     margin-top: 50px;
     padding-top: 70px;
     padding-bottom: 70px;
+    border-top-style: dashed;
     
     background: linear-gradient(332deg, rgba(128,127,147,1) 28%, rgba(204,129,68,1) 100%);
 
@@ -419,5 +420,14 @@ border: none
 }
 
 
+/* --PRODOTTI-- */
+.product-title {}
 
+#product-cards {
+    display: flex;
+}
 
+ #product-section .item-img {
+    width: 200px;
+    height: 200px;
+}
