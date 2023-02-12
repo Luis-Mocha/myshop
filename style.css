@@ -421,7 +421,13 @@ border: none
 
 
 /* --PRODOTTI-- */
-.product-title {}
+#product-section {
+    padding-top: 70px;
+}
+
+.product-title {
+    text-align: center;
+}
 
 #product-cards {
     display: flex;
