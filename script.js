@@ -80,4 +80,30 @@ function openAbout(aboutName, elmnt, color) {
 document.getElementById("defaultOpen").click();
 
 
+/* --PRDDOTTI */
+fetch("./items.json")
+.then(response => {
+    return response.json();
+})
+.then(data => {
+    item = data;
+    console.log(item);
 
+
+//la seguente parte funziona "da sola" se ho "json" su js
+document.getElementById("product-cards").innerHTML = 
+  `
+  ${item.map(itemTemplate).join('')}
+  `;
+
+function itemTemplate(item) {
+  return `
+  <div class="product">
+    <img class="item-img" src="${item.fotoUrl}" alt="Foto Prodotto">
+    <h2 class="item-name">${item.name}</h2>
+    <span class="item-color"><i>Colore: ${item.color.join(', ')}</i></span>
+    <span class="item-price">Prezzo: ${item.price}$</span>
+  </div>
+  `
+} 
+});
