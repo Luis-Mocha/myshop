@@ -431,9 +431,14 @@ border: none
 
 #product-cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
- #product-section .item-img {
-    width: 200px;
-    height: 200px;
+.product {
+    margin: 10px;
+}
+
+#product-section .item-img {
+    width: 100%
 }
