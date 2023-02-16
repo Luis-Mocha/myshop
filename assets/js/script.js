@@ -81,7 +81,7 @@ document.getElementById("defaultOpen").click();
 
 
 /* --PRODOTTI */
-fetch("./items.json")
+fetch("../assets/js/items.json")
 .then(response => {
     return response.json();
 })
