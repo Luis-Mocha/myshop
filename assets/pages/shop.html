@@ -13,7 +13,67 @@
     <!-- Link Css -->
     <link rel="stylesheet" href="../css/shop-page.css">
 </head>
+
 <body>
-    
+    <!--NAVBAR-->
+    <div class="navbar">
+        <div class="left">
+            <button><img id="menu-button" src="../images/dropmenu-icon-white.png" alt=" Icona Menu"></button>
+        </div>
+
+        <div class="center">BEADY IDEAS</div>
+
+        <div class="right">
+            <span id="welcome-user"></span>
+            <button><img src="../images/shoppingcart-icon-white.png" alt="Icona Carrello" title="Carrello"></button>
+            <button><img id="login-icon" src="../images/user-icon-white.png" alt="Icona User" title="Login"></button>
+            
+            
+        </div>
+
+        <!--MENU MODAL-->
+        <div class="menu">
+            <div class="buttons menu-buttons">
+                <a href="#product-section" onclick="closeMenu()">ANELLI</a>
+                <a href="#product-section" onclick="closeMenu()">COLLANE</a>
+                <a href="#product-section" onclick="closeMenu()">BRACCIALI</a>
+                <a href="#aboutsection" onclick="closeMenu()">ABOUT US</a>
+                <a href="#gallery-section" onclick="closeMenu()">GALLERIA</a>
+                <a href="#social-section" onclick="closeMenu()">SOCIAL</a>
+            </div>
+            <img id="close-button" src="../images/arrow-up.png" alt="Chiudi Menu">
+        </div>
+
+       
+    </div>
+
+    <!--LOGIN WINDOW-->
+    <div id="login-modal"class="login-show">
+        <form id="login-form">
+
+            <button id="login-xbutton">x</button>
+            <img src="../images/logo-transparent.png" alt="icona User">
+
+            <label for="login-name">Nome:</label>
+            <input type="text" name="login-name" id="login-name" placeholder="" required>
+
+            <label for="login-password">Password:</label>
+            <input type="password" name="login-password" id="login-password" required>
+
+            <div>
+                <input type="checkbox" name="login-passwordcheck" id="login-passwordcheck" checked>
+                <label for="login-passwordcheck">Rimani connesso</label>
+            </div>
+            
+            <button type="submit">LOGIN</button>
+        </form>
+        <a href="https://www.youtube.com/watch?v=4Cio-CSt_rg" target="_blank" id="signup-button">Registrati</a>
+    </div>
+
+
+
+
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

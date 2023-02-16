@@ -1,0 +1,214 @@
+/*
+font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+color: rgb(245, 99, 17);
+*/
+
+
+/*CSS RESET*/
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+
+    font-family: 'Cinzel', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+background-color: transparent;
+border: none
+}
+
+/* --NAVBAR-- */
+.navbar {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: black;
+    height: 70px;
+    color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 4px white;
+    border-style:ridge;
+
+    z-index: 2; /*altrimenti i hero button passano sopra*/
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-family:'Cinzel Decorative', cursive;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.left img {
+    margin-left: 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.right img {
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+#welcome-user {
+    margin: 10px;
+    font-size: 22px;
+}
+@media screen and (max-width: 899px) {
+    #welcome-user { 
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .right img { 
+        margin-right: 8px;
+    }
+}
+
+/* --OPTIONS MODAL-- */
+.menu {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-color: black;
+
+    border-radius: 0 0 20px 20px;
+    border-bottom: 3px solid rgb(239, 122, 6);
+
+    display: none;
+}
+
+.menu .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    line-height: 3;
+}
+.menu .buttons > *:hover {
+    text-decoration: underline;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+.menu #close-button {
+    width: 20px;
+    height: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    cursor: pointer;
+
+    scale: 1;
+    transition: 1s;
+
+}
+
+#close-button:hover {
+    scale: 1.3;
+}
+/*aprire e chiudere le opzioni*/
+.menu-show {
+    display: block;
+}
+
+
+/*  --LOGIN-- */
+#login-modal {
+    width: 60%;
+    margin: auto;
+
+    background-color: rgb(44, 38, 38);
+    color: white;
+    padding: 10px;
+    border: 6px ridge;
+    border-color: rgb(245, 99, 17) white;
+    border-radius: 0 20px 0 20px;
+
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+@media screen and (max-width: 500px) {
+    #login-modal {
+       width: 90%;
+    }
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-form img {
+    width: 30%;
+    border-radius: 15%; 
+}
+#login-form button {
+    color: white;
+    cursor: pointer;
+}
+#login-form > * {
+    margin: 5px 0;
+    font-size: larger;
+}
+
+#login-form label:last-child {
+    font-size: 12px;
+    font-style: italic;
+    color: gray;
+}
+
+.login-show {
+    display: none;
+}
+
+#login-form input {
+    padding: 3px;
+    border-bottom: 1px solid orange;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#signup-button {
+    color: white;
+    font-size: smaller;
+}
+
+#login-xbutton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 8px;
+}
