@@ -93,7 +93,7 @@ border: none
 /* --HERO PAGE-- */
 .hero {
     height: calc(100vh - 70px);
-    background-image: url(./images/background-flowers.jpg);
+    background-image: url(../images/background-flowers.jpg);
     background-size: cover;
     background-position: center;
 }
