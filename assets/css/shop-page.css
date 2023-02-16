@@ -212,3 +212,26 @@ border: none
     top: 0;
     padding-right: 8px;
 }
+
+/* --PRODOTTI-- */
+#product-section {
+    padding-top: 70px;
+}
+
+.product-title {
+    text-align: center;
+}
+
+#product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product {
+    margin: 10px;
+}
+
+#product-section .item-img {
+    width: 100%
+}

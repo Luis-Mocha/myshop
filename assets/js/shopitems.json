@@ -1,0 +1,44 @@
+[     
+    {
+    "type": "anello",
+    "name": "anello a",
+    "color": ["rosso", "blu"],
+    "price": "10",
+    "fotoUrl": "../images/ring-black-heart.png"
+    },
+    {
+    "type": "anello",
+    "name": "anello b",
+    "color": ["verde", "giallo"],
+    "price": "10",
+    "fotoUrl": "../images/ring-red-heart.png"   
+    },
+    {
+    "type": "anello",
+    "name": "anello c",
+    "color": ["verde", "arancione"],
+    "price": "13",
+    "fotoUrl": "../images/ring-double-colored.png"   
+    },
+    {
+    "type": "bracciale",
+    "name": "bracciale a",
+    "color": ["rosso", "blu"],
+    "price": "15",
+    "fotoUrl": "../images/ring-black-heart.png"
+    },
+    {
+    "type": "bracciale",
+    "name": "bracciale b",
+    "color": ["verde", "giallo"],
+    "price": "15",
+    "fotoUrl": "../images/ring-red-heart.png"   
+    },
+    {
+    "type": "bracciale",
+    "name": "bracciale c",
+    "color": ["verde", "arancione"],
+    "price": "15",
+    "fotoUrl": "../images/ring-double-colored.png"   
+    }
+]
